@@ -9,7 +9,7 @@ server.use(middlewares);
 /**
  * Create Collection dinamically
  */
-server.post('/:name', function (req, res) {
+server.post('/db/:name', function (req, res) {
   var obj = {};
   obj[req.params.name] = [];
   // by default create an empty table named `name`
